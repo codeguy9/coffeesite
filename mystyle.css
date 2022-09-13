@@ -1,0 +1,549 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,500;1,300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Raleway, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+:root {
+    --container-width: 85%;
+    --footer-color: #13131A;
+    --btn-orange: #D3AD7F;
+}
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 12vh;
+}
+
+.container {
+    width: var(--container-width);
+    margin: auto;
+}
+
+.nav ul li {
+    display: inline-block;
+    padding: 1rem;
+    
+}
+
+.nav ul li a {
+    color: white;
+}
+
+.nav ul li a:hover {
+    color: var(--btn-orange);
+}
+
+.border-bottom {
+    border-bottom: 1px solid white;
+    background-color: black;
+    height: 12vh;
+}
+
+/* .submenu {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.6s;
+} */
+
+.header-icons {
+    font-size: 1.5rem;
+}
+
+.header-icons a {
+    color: white;
+    transition: all .8s;
+}
+
+.header-icons a:hover {
+    color: var(--btn-orange);
+}
+
+.fa-cart-shopping {
+    padding-left: 1rem;
+}
+
+.header {
+    background-image: url(images/home-img.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+}
+
+.header-titles {
+    width: 30%;
+    transform: translateY(300px);
+}
+
+.header-titles h1 {
+    color: white;
+    font-size: 4rem;
+
+}
+
+.header-titles p {
+    color: white;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 1.5;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.header-titles a {
+    background: var(--btn-orange);
+    color: white;
+    padding: 10px 40px;
+    
+    transition: all .5s;
+}
+
+.header-titles a:hover {
+    padding: 10px 50px 10px 50px;
+    letter-spacing: 8px;;
+}
+
+/* About Us  */
+
+.about-us {
+    background-color: black;
+}
+
+.main-about-us {
+    display: flex;
+    margin-top: 4rem;
+
+}
+
+.about-us-title {
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+}
+
+.about-us-title h3 span {
+    color: var(--btn-orange);
+}
+
+.about-us-text {
+    width: 50%;
+    color: white;
+    padding: 1rem;
+    transform: translateY(30%);
+    
+}
+
+.about-us-container {
+    background: var(--footer-color)
+}
+
+.about-us-text h2 {
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+
+.about-us-text p {
+    line-height: 2;
+    padding-bottom: 2rem;
+}
+
+.about-us-text a {
+    background-color: var(--btn-orange);
+    padding: 10px 40px;
+    color: white;
+    transition: all .5s;
+}
+
+.about-us-text a:hover {
+    padding: 10px 50px 10px 50px;
+    letter-spacing: 8px;
+}
+
+/* Menu */
+
+.menu .h2-orange {
+    text-align: center;
+    font-size: 3rem;
+
+}
+
+.main-menu {
+    padding-top: 3rem;
+    background-color: black;
+}
+
+.menu .h2-orange .span-menu {
+    color: var(--btn-orange);
+    
+}
+
+.menu .h2-orange {
+    color: white;
+}
+
+.menu-items {
+    padding-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-item {
+    background-color: black;
+    padding: 60px 90px;
+    border: .3px solid var(--btn-orange);
+    text-align: center;
+    transition: all .5s;
+}
+
+.menu-item h3 {
+    color: white;
+    padding-top: 2rem;
+}
+
+.menu-item h2 {
+    color: white;
+    font-weight: 300;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.menu-item h2 span {
+    text-decoration:line-through;
+    font-size: 1rem;
+}
+
+.menu-item a {
+    background-color: var(--btn-orange);
+    padding: 7px 20px;
+    color: white;
+    transition: all .5s;
+    margin-top: 3rem;
+}
+
+.menu-item a:hover {
+    padding: 7px 25px 7px 25px;
+    letter-spacing: .7px;
+}
+
+.menu-item:hover {
+    background-color: white;
+    color: black;
+    
+}
+
+.h2-orange {
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    padding: 2rem 0;
+}
+
+.span-menu {
+    color: var(--btn-orange);
+}
+
+
+.product-items {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.p-item {
+    border: 0.3px solid var(--btn-orange);
+    padding: 10px 200px;
+    text-align: center;  
+}
+
+.item-icons{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 2rem;
+    
+}
+
+.shopping-cart, .fa-heart, .fa-eye {
+    color: white;
+    padding: 15px;
+    border: 0.5px solid white;
+    transition: all .8s;
+}
+
+.shopping-cart:hover {
+    background-color: var(--btn-orange);
+    color: black;
+    border: 1px solid var(--btn-orange);
+}
+
+.fa-heart:hover {
+    background-color: var(--btn-orange);
+    color: black;
+    border: 1px solid var(--btn-orange);
+}
+
+.fa-eye:hover {
+    background-color: var(--btn-orange);
+    color: black;
+    border: 1px solid var(--btn-orange);
+}
+
+.product-image {
+    padding: 3rem 0;
+}
+
+.p-item h3 {
+    color: white;
+    font-size: 2rem;
+}
+
+.stars {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+.fa-star {
+    color: var(--btn-orange)
+    
+}
+
+.p-item h2 {
+    color: white;
+    font-weight: 300;
+}
+
+.p-item h2 span {
+    text-decoration: line-through;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.review-menu {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+    gap: 30px;
+}
+
+.review-item {
+    text-align: center;
+    border: 1px solid var(--btn-orange);
+    padding: 2rem 3rem;
+   
+    
+
+}
+
+.review-item p {
+    color: white;
+    line-height: 2;
+    font-size: .8rem;
+    padding: 2rem 0;
+    
+}
+
+/* Contact section */
+
+.contact-h {
+    color: var(--btn-orange);
+}
+
+.span-contact {
+    color: white;
+}
+
+.footer-color {
+    background-color: var(--footer-color);
+    width: 80%;
+    margin: auto;
+    padding: 5rem 0;
+}
+
+.contact-input {
+    text-align: center;
+}
+
+.contact-input h3 {
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.contact-input a {
+    background-color: var(--btn-orange);
+    padding: 10px 40px;
+    color: white;
+    transition: all .5s;
+}
+
+.contact-input a:hover {
+    padding: 10px 50px 10px 50px;
+    letter-spacing: 8px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10rem;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+form input {
+    background-color: black;
+    border: 1px solid grey;
+    height: 4rem;
+    width: 60%;
+    color: white;
+    padding-left: 1rem;
+    margin: 2rem auto 0 auto;
+}
+
+
+/* Our Blogs */
+
+.our-blogs {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+}
+
+.blogs {
+    padding: 1rem 0;
+}
+
+.blog {
+    border: .7px solid white;
+}
+
+.zoom-within-container, .blog img {
+     width: 600px;   
+}
+
+.zoom-within-container {
+    overflow: hidden;
+}
+
+.zoom-within-container img {
+    transition: transform .5s ease;
+}
+
+.zoom-within-container:hover img {
+    transform: scale(1.5);
+  }
+
+.part-down {
+    padding: 1rem;
+    height: 20%;
+    background: black;
+}
+
+.part-down h3 a {
+    color: white;
+    font-size: 2rem;
+}
+
+.part-down h3 {
+    padding-bottom: 1.5rem;
+}
+
+.part-down h5 a {
+    color: var(--btn-orange);
+    font-size: 1rem;
+    padding: 1rem 0;
+}
+
+
+.part-down .link-part-down {
+    background-color: var(--btn-orange);
+    padding: 7px 20px;
+    color: white;
+    transition: all .5s;
+    margin-top: 3rem;
+    margin: 1rem 0;
+}
+
+.link-part-down:hover {
+    padding: 8px 30px 8px 30px;
+    letter-spacing: 4px;
+
+}
+
+.background-color {
+    background-color: var(--footer-color);
+}
+
+.flex-footer {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem 0;
+    row-gap: 3rem;
+}
+
+.social i {
+    color: white;
+    font-size: 1.3rem;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 1rem 1.2rem;
+    margin: 0 1rem;
+}
+
+.social i:hover {
+    background-color: var(--btn-orange);
+    transition: background-color .7s;
+}
+
+.footer-menu a {
+    color: white;
+    padding: .6rem 1rem;
+    border: 1px solid white;
+    margin: 0 1rem
+}
+
+.footer-menu a:hover {
+    background-color: var(--btn-orange);
+    transition: all .6s;
+}
+
+.copyright h2 {
+   color: white;
+   font-weight: 300;
+   font-size: 1rem;
+
+}
+
+.copyright span {
+    color: var(--btn-orange);
+    
+}
